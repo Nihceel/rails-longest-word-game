@@ -1,0 +1,11 @@
+<h1>Result</h1>
+
+<%= link_to "Let's play again!", new_path %>
+
+<% if @word %>
+  <p>Congrats! <strong><%= @word %></strong> is valid. You win 🎉</p>
+<% elsif %>
+  <p>Sorry, <strong><%= @word %></strong> is not a valid english word...</p>
+<% else %>
+  <p>Sorry, <strong><%= @word %></strong> can't be built out of <%= @word %></p>
+<% end %>
